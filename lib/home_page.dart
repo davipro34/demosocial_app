@@ -17,8 +17,8 @@ class HomePage extends StatelessWidget {
 }
 
 Widget post1 = Container(
-  padding: EdgeInsets.fromLTRB(0, 15, 0, 0),
-  margin: EdgeInsets.fromLTRB(20, 20, 20, 0),
+  padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
+  margin: const EdgeInsets.fromLTRB(20, 20, 20, 0),
   decoration: BoxDecoration(
     color: Colors.white,
     borderRadius: BorderRadius.circular(10),
@@ -27,7 +27,7 @@ Widget post1 = Container(
         color: Colors.black.withOpacity(0.2),
         spreadRadius: 1,
         blurRadius: 5,
-        offset: Offset(0, 3),
+        offset: const Offset(0, 3),
       ),
     ],
   ),
@@ -36,20 +36,38 @@ Widget post1 = Container(
       Row(
         children: [
           Container(
-            color: Colors.black,
-            padding: EdgeInsets.all(20),
+            margin: const EdgeInsets.fromLTRB(10, 0, 15, 0),
+            height: 50,
+            width: 50,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(25),
+              child: Image.network('https://digischool-public.s3-eu-west-1.amazonaws.com/marketing-%C3%A9tudiant/Spacex/Logo_Spacex_entreprise_elon_musk.jpg'),
+            ),
           ),
-          Text('Elon Musk'),
+          const Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'SpaceX',
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text('Floride'),
+            ],
+          ),
         ],
       ),
+      const SizedBox(height: 10),
       Image.network('https://img.generation-nt.com/01B0012001663785.jpg'),
     ],
   ),
 );
 
 Widget post2 = Container(
-  padding: EdgeInsets.fromLTRB(0, 15, 0, 0),
-  margin: EdgeInsets.fromLTRB(20, 20, 20, 0),
+  padding: const EdgeInsets.fromLTRB(0, 15, 0, 0),
+  margin: const EdgeInsets.fromLTRB(20, 20, 20, 0),
   decoration: BoxDecoration(
     color: Colors.grey,
     borderRadius: BorderRadius.circular(10),
@@ -58,7 +76,7 @@ Widget post2 = Container(
         color: Colors.black.withOpacity(0.2),
         spreadRadius: 1,
         blurRadius: 5,
-        offset: Offset(0, 3),
+        offset: const Offset(0, 3),
       ),
     ],
   ),
