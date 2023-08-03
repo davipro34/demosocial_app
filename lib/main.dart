@@ -69,7 +69,7 @@ class _TabsPageState extends State<TabsPage> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue[700],
+        selectedItemColor: Colors.blue,
         onTap: _onItemTapped,
       ),
     );
