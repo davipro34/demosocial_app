@@ -34,6 +34,7 @@ Widget topBox = Container(
   child: Column(
     children: [
       imageProfile,
+      SizedBox(height: 10),
       textProfile,
     ],
   ),
