@@ -12,6 +12,7 @@ class HomePage extends StatelessWidget {
             post1,
             post2,
             post3,
+            const SizedBox(height: 20),
           ],
         ),
       ),
