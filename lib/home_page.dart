@@ -45,7 +45,7 @@ Widget post1 = Container(
             width: 50,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(25),
-              child: Image.network('https://digischool-public.s3-eu-west-1.amazonaws.com/marketing-%C3%A9tudiant/Spacex/Logo_Spacex_entreprise_elon_musk.jpg'),
+              child: Image.asset('assets/images/Logo_Spacex_entreprise_elon_musk.jpg'),
             ),
           ),
           const Column(
@@ -64,7 +64,7 @@ Widget post1 = Container(
         ],
       ),
       const SizedBox(height: 10),
-      Image.network('https://img.generation-nt.com/01B0012001663785.jpg'),
+      Image.asset('assets/images/fusees.jpg'),
       Row(
         children: [
           IconButton(
@@ -123,26 +123,26 @@ Widget post2 = Container(
             width: 50,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(25),
-              child: Image.network('https://storage.googleapis.com/webdesignledger.pub.network/WDL/12f213e1-t1.jpg'),
+              child: Image.asset('assets/images/LogoTesla.jpg'),
             ),
           ),
           const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'SpaceX',
+                'Tesla',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Text('Floride'),
+              Text('Freemont'),
             ],
           ),
         ],
       ),
       const SizedBox(height: 10),
-      Image.network('https://www.challenges.fr/assets/img/2016/04/01/cover-r4x3w1000-5b7ac9ce4a21e-tesla-model-3-2016_2.png'),
+      Image.asset('assets/images/CarTesla.png'),
       Row(
         children: [
           IconButton(
@@ -201,26 +201,26 @@ Widget post3 = Container(
             width: 50,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(25),
-              child: Image.network('https://res-4.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1493657922/ceit0qzp8rhqucbcaox6.png'),
+              child: Image.asset('assets/images/LogoTheBoringCompany.png'),
             ),
           ),
           const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'SpaceX',
+                'The Boring Company',
                 style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Text('Floride'),
+              Text('Los Angeles'),
             ],
           ),
         ],
       ),
       const SizedBox(height: 10),
-      Image.network('https://c0.lestechnophiles.com/www.numerama.com/content/uploads/2018/05/theboringcompanyhyperloop.jpg?resize=1212,712'),
+      Image.asset('assets/images/theboringcompanyhyperloop.jpg'),
       Row(
         children: [
           IconButton(

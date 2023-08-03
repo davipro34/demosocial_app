@@ -34,7 +34,7 @@ Widget topBox = Container(
   child: Column(
     children: [
       imageProfile,
-      SizedBox(height: 10),
+      const SizedBox(height: 10),
       textProfile,
     ],
   ),
@@ -58,7 +58,7 @@ Widget imageProfile = Container(
   ),
   child: ClipRRect(
     borderRadius: BorderRadius.circular(100),
-    child: Image.network('https://relayeur.files.wordpress.com/2015/05/d7cb2e4a29656d1a73663685bca6732d.jpeg?w=620'),
+    child: Image.asset('assets/images/PortraitElonMusk.jpeg'),
   ),
 );
 

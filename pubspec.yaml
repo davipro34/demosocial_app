@@ -62,6 +62,15 @@ flutter:
   # assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/Logo_Spacex_entreprise_elon_musk.jpg
+    - assets/images/fusees.jpg
+    - assets/images/LogoTesla.jpg
+    - assets/images/CarTesla.png
+    - assets/images/LogoTheBoringCompany.png
+    - assets/images/theboringcompanyhyperloop.jpg
+    - assets/images/PortraitElonMusk.jpeg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
