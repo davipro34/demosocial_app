@@ -18,7 +18,7 @@ class ProfilPage extends StatelessWidget {
 Widget topBox = Container(
   height: 200,
   width: double.infinity,
-  decoration: BoxDecoration(
+  decoration: const BoxDecoration(
     gradient: LinearGradient(
       begin: Alignment.topCenter,
       end: Alignment.bottomCenter,
@@ -30,7 +30,29 @@ Widget topBox = Container(
   ),
   child: Column(
     children: [
-
+      imageProfile,
     ],
+  ),
+);
+
+Widget imageProfile = Container(
+  padding: EdgeInsets.all(4),
+  height: 150,
+  width: 150,
+  decoration: BoxDecoration(
+    color: Colors.white,
+    borderRadius: BorderRadius.circular(75),
+    boxShadow: [
+      BoxShadow(
+        color: Colors.black.withOpacity(0.4),
+        spreadRadius: 1,
+        blurRadius: 2,
+        offset: Offset(0, 1),
+      ),
+    ],
+  ),
+  child: ClipRRect(
+    borderRadius: BorderRadius.circular(100),
+    child: Image.network('https://relayeur.files.wordpress.com/2015/05/d7cb2e4a29656d1a73663685bca6732d.jpeg?w=620'),
   ),
 );
