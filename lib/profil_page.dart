@@ -9,6 +9,7 @@ class ProfilPage extends StatelessWidget {
       child: Column(
         children: [
           topBox,
+          folowSection,
         ],
       ),
     );
@@ -16,7 +17,7 @@ class ProfilPage extends StatelessWidget {
 }
 
 Widget topBox = Container(
-  padding: EdgeInsets.fromLTRB(0, 30, 0, 30),
+  padding: const EdgeInsets.fromLTRB(0, 30, 0, 30),
   width: double.infinity,
   decoration: const BoxDecoration(
     gradient: LinearGradient(
@@ -37,7 +38,7 @@ Widget topBox = Container(
 );
 
 Widget imageProfile = Container(
-  padding: EdgeInsets.all(4),
+  padding: const EdgeInsets.all(4),
   height: 150,
   width: 150,
   decoration: BoxDecoration(
@@ -48,7 +49,7 @@ Widget imageProfile = Container(
         color: Colors.black.withOpacity(0.4),
         spreadRadius: 1,
         blurRadius: 2,
-        offset: Offset(0, 1),
+        offset: const Offset(0, 1),
       ),
     ],
   ),
@@ -95,6 +96,85 @@ Widget textProfile = Container(
             ),
           ),
         ],
+      ),
+    ],
+  ),
+);
+
+Widget folowSection = Container(
+  color: Colors.white,
+  padding: const EdgeInsets.all(20),
+  child: Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Container(
+        color: Colors.white,
+        padding: EdgeInsets.all(20),
+        child: Column(
+          children: [
+            Text(
+              'Posts',
+              style: TextStyle(
+                color: Colors.blue[400],
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              '1523',
+              style: TextStyle(
+                color: Colors.tealAccent[700],
+                fontSize: 15,
+              ),
+            ),
+          ],
+        ),
+      ),
+      Container(
+        color: Colors.white,
+        padding: EdgeInsets.all(20),
+        child: Column(
+          children: [
+            Text(
+              'Folowers',
+              style: TextStyle(
+                color: Colors.blue[400],
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              '19K',
+              style: TextStyle(
+                color: Colors.tealAccent[700],
+                fontSize: 15,
+              ),
+            ),
+          ],
+        ),
+      ),
+      Container(
+        color: Colors.white,
+        padding: EdgeInsets.all(20),
+        child: Column(
+          children: [
+            Text(
+              'Follow',
+              style: TextStyle(
+                color: Colors.blue[400],
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              '1300',
+              style: TextStyle(
+                color: Colors.tealAccent[700],
+                fontSize: 15,
+              ),
+            ),
+          ],
+        ),
       ),
     ],
   ),
