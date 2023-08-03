@@ -10,6 +10,7 @@ class ProfilPage extends StatelessWidget {
         children: [
           topBox,
           folowSection,
+          textSection,
         ],
       ),
     );
@@ -109,7 +110,7 @@ Widget folowSection = Container(
     children: [
       Container(
         color: Colors.white,
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: Column(
           children: [
             Text(
@@ -132,7 +133,7 @@ Widget folowSection = Container(
       ),
       Container(
         color: Colors.white,
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: Column(
           children: [
             Text(
@@ -155,7 +156,7 @@ Widget folowSection = Container(
       ),
       Container(
         color: Colors.white,
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: Column(
           children: [
             Text(
@@ -176,6 +177,31 @@ Widget folowSection = Container(
           ],
         ),
       ),
+    ],
+  ),
+);
+
+Widget textSection = Container(
+  padding: const EdgeInsets.all(20),
+  child: Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      const Text(
+        'À propos',
+        style: TextStyle(
+          color: Colors.blue,
+          fontSize: 20,
+          fontWeight: FontWeight.w500,
+        ),
+      ),
+      Text(
+        "Elon Musk, né le 28 juin 1971 à Pretoria, est un entrepreneur, chef d'entreprise et ingénieur sud-africain, naturalisé canadien en 1988 puis américain en 2002.",
+        style: TextStyle(
+          color: Colors.grey[600],
+          fontSize: 15,
+          height: 1.5,
+        ),
+      )
     ],
   ),
 );
