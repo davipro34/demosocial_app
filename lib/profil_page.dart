@@ -6,7 +6,31 @@ class ProfilPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.red,
+      child: Column(
+        children: [
+          topBox,
+        ],
+      ),
     );
   }
 }
+
+Widget topBox = Container(
+  height: 200,
+  width: double.infinity,
+  decoration: BoxDecoration(
+    gradient: LinearGradient(
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+      colors: [
+      Colors.blue,
+      Colors.tealAccent,
+      ],
+    ),
+  ),
+  child: Column(
+    children: [
+
+    ],
+  ),
+);
