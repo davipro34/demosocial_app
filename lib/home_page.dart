@@ -61,6 +61,36 @@ Widget post1 = Container(
       ),
       const SizedBox(height: 10),
       Image.network('https://img.generation-nt.com/01B0012001663785.jpg'),
+      Row(
+        children: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.favorite,
+              color: Colors.grey,
+           ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.comment,
+              color: Colors.grey,
+           ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.share,
+              color: Colors.grey,
+           ),
+          ),
+        ],
+      ),
+      Container(
+        padding: const EdgeInsets.fromLTRB(10, 0, 10, 10),
+        child: const Text("Deux astronautes américains se sont envolés samedi depuis le centre spatial Kennedy, en Floride, à bord d'une fusée de l'entreprise privée SpaceX, fondée par Elon Musk."),
+
+      ),
     ],
   ),
 );
