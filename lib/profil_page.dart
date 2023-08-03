@@ -11,6 +11,7 @@ class ProfilPage extends StatelessWidget {
           topBox,
           folowSection,
           textSection,
+          buttonSection,
         ],
       ),
     );
@@ -204,4 +205,27 @@ Widget textSection = Container(
       )
     ],
   ),
+);
+
+Widget buttonSection = ElevatedButton(
+  style: ElevatedButton.styleFrom(
+    padding: const EdgeInsets.all(0),
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.all(Radius.circular(30)),
+    ),
+  ),
+  child: Container(
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(30),
+      gradient: LinearGradient(
+        colors: <Color>[
+          Colors.blue.shade400,
+          Colors.tealAccent.shade700,
+        ],
+      ),
+    ),
+    padding: const EdgeInsets.fromLTRB(100, 15, 100, 15),
+    child: const Text('Suivre', style: TextStyle(fontSize: 20)),
+  ),
+  onPressed: () {},
 );
