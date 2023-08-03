@@ -16,7 +16,7 @@ class ProfilPage extends StatelessWidget {
 }
 
 Widget topBox = Container(
-  height: 200,
+  padding: EdgeInsets.fromLTRB(0, 30, 0, 30),
   width: double.infinity,
   decoration: const BoxDecoration(
     gradient: LinearGradient(
@@ -31,6 +31,7 @@ Widget topBox = Container(
   child: Column(
     children: [
       imageProfile,
+      textProfile,
     ],
   ),
 );
@@ -54,5 +55,47 @@ Widget imageProfile = Container(
   child: ClipRRect(
     borderRadius: BorderRadius.circular(100),
     child: Image.network('https://relayeur.files.wordpress.com/2015/05/d7cb2e4a29656d1a73663685bca6732d.jpeg?w=620'),
+  ),
+);
+
+
+Widget textProfile = Container(
+  child: const Column(
+    children: [
+      Text(
+        'Elon Musk',
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 22,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      SizedBox(height: 5),
+      Text(
+        'CEO de Tesla, SpaceX etc',
+        textAlign: TextAlign.center,
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 17,
+        ),
+      ),
+      SizedBox(height: 5),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Icon(
+            Icons.location_on,
+            color: Colors.white,
+          ),
+          Text(
+            'Los angeles, USA',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 17,
+            ),
+          ),
+        ],
+      ),
+    ],
   ),
 );
