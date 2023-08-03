@@ -6,13 +6,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Column(
-        children: [
-          post1,
-          post2,
-          post3,
-        ],
-      )
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            post1,
+            post2,
+            post3,
+          ],
+        ),
+      ),
     );
   }
 }
